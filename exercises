@@ -80,3 +80,16 @@ for word in sentenceSpl:
     newWords[0] = newWords[0].capitalize()
     newSentence = " ".join(newWords)
 print(newSentence)
+
+4. Hometask for Thursday
+# I tried to do it around a cloc, but antway smth goes wrong and have no idea what.
+
+numList = list(range(31))
+numList = numList[2:]
+print(numList)
+primeList = []
+i = 2
+for n in range(numList[0], numList[-1]):
+    for i in range(2, n):
+        primeList = [n for n in numList if n % i != 0]
+print(primeList)
